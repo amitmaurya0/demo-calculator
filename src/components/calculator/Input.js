@@ -14,8 +14,7 @@ import { createExpression } from '../../actions/number-action';
 const TextField = ({ expression, createExpression }) =>{
   return (
     <FormControl margin="normal" required fullWidth>
-      <InputLabel htmlFor="email">Input</InputLabel>
-      <Input value={expression.expression} onChange={(e)=>createExpression(e.target.value)} id="email" name="email" autoComplete="email" autoFocus />
+      <Input value={expression.expression} onChange={(e)=>createExpression(e.target.value)} id="text" name="text" autoFocus />
     </FormControl>
   )
 }

@@ -35,16 +35,12 @@ const styles = theme => ({
   },
 });
 
-const AppButton = ({ classes, children, onClick }) => (
+const AppButton = (props) => (
   <Button
-    type="submit"
-    fullWidth
-    variant="contained"
-    color="primary"
-    className={classes.submit}
-    onClick={onClick}
+    {...props}
+    className={props.classes.submit}
   >
-  {children}
+  {props.children}
   </Button>
 )
 
